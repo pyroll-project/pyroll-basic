@@ -11,3 +11,4 @@ import pyroll.integral_thermal as integral_thermal
 import pyroll.hensel_power_and_labour as hensel_power_and_labour
 import pyroll.wusatowski_spreading as wusatowski_spreading
 import pyroll.hitchcock_roll_flattening as hitchcock_roll_flattening
+import pyroll.lendl_equivalent_method as lendl_equivalent_method

@@ -27,6 +27,7 @@ pyroll-wusatowski-spreading = "^1.1.0"
 pyroll-zouhar-contact = "^1.0.0"
 pyroll-freiberg-flow-stress = "^1.1.1"
 pyroll-hitchcock-roll-flattening = "^1.0.0"
+pyroll-lendl-equivalent-method = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 

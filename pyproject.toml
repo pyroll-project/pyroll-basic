@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyroll-basic"
-version = "1.0.0"
+version = "1.0.1"
 description = "A meta package for installing quickly the PyRolL core and a set of basic plugins."
 authors = ["Max Weiner <max.weiner@imf.tu-freiberg.de>"]
 license = "BSD-3-Clause"
@@ -19,7 +19,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = ">3.9, <3.11"
+python = ">=3.9, <3.11"
 pyroll = "^1.0.1"
 pyroll-integral-thermal = "^1.1.0"
 pyroll-hensel-power-and-labour = "^1.0.0"

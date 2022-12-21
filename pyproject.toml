@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pyroll-basic"
-version = "1.0.1"
-description = "A meta package for installing quickly the PyRolL core and a set of basic plugins."
+version = "2.0.0a1"
+description = "A meta package for installing quickly the PyRolL core and a set of basic plugins and extensions."
 authors = ["Max Weiner <max.weiner@imf.tu-freiberg.de>"]
 license = "BSD-3-Clause"
 homepage = "https://pyroll-project.github.io"
@@ -19,17 +19,21 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.9, <3.11"
-pyroll = "^1.0.1"
-pyroll-integral-thermal = "^1.1.0"
-pyroll-hensel-power-and-labour = "^1.0.0"
-pyroll-wusatowski-spreading = "^1.1.0"
-pyroll-zouhar-contact = "^1.0.0"
-pyroll-freiberg-flow-stress = "^1.1.1"
-pyroll-hitchcock-roll-flattening = "^1.0.0"
-pyroll-lendl-equivalent-method = "^1.0.0"
+python = ">=3.9, <4.0"
+pyroll-core = "^2.0.0a"
+pyroll-cli = "^2.0.0a"
+pyroll-report = "^2.0.0a"
+pyroll-export = "^2.0.0a"
+pyroll-integral-thermal = "^2.0.0a"
+pyroll-hensel-power-and-labour = "^2.0.0a"
+pyroll-wusatowski-spreading = "^2.0.0a1"
+pyroll-zouhar-contact = "^2.0.0a"
+pyroll-freiberg-flow-stress = "^2.0.0a"
+pyroll-hitchcock-roll-flattening = "^2.0.0a"
+pyroll-lendl-equivalent-method = "^2.0.0a"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -28,7 +28,9 @@ def test_solve(tmp_path: Path, caplog):
                     r2=40e-3
                 ),
                 nominal_radius=160e-3,
-                rotational_frequency=1
+                rotational_frequency=1,
+                elastic_modulus=210e9,
+                poissons_ratio=0.3,
             ),
             gap=2e-3,
         ),
@@ -45,7 +47,9 @@ def test_solve(tmp_path: Path, caplog):
                     depth=11.5e-3
                 ),
                 nominal_radius=160e-3,
-                rotational_frequency=1
+                rotational_frequency=1,
+                elastic_modulus=210e9,
+                poissons_ratio=0.3,
             ),
             gap=2e-3,
         ),

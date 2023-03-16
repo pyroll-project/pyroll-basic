@@ -1,4 +1,5 @@
 import logging
+import webbrowser
 from pathlib import Path
 
 from pyroll.basic import Profile, PassSequence, RollPass, Roll, CircularOvalGroove, Transport, RoundGroove
@@ -67,4 +68,5 @@ def test_solve(tmp_path: Path, caplog):
     print()
 
     report_file.write_text(rendered)
-    print(report_file)
+
+    webbrowser.open(report_file.as_uri())

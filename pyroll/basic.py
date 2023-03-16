@@ -1,9 +1,12 @@
 import pyroll.core as core
 from pyroll.core import (
-    BoxGroove, ConstrictedBoxGroove, SquareGroove, DiamondGroove, RoundGroove, FalseRoundGroove,
+    BoxGroove, ConstrictedBoxGroove, SquareGroove, DiamondGroove, RoundGroove, FalseRoundGroove, GothicGroove,
+    UpsetBoxGroove, UpsetOvalGroove,
     CircularOvalGroove, FlatOvalGroove, SwedishOvalGroove, ConstrictedSwedishOvalGroove, Oval3RadiiGroove,
     Oval3RadiiFlankedGroove, SplineGroove, GenericElongationGroove, FlatGroove, Transport, RollPass, Unit, Roll,
-    Profile, Rotator, PassSequence, Hook, HookHost, HookFunction
+    Profile, Rotator, PassSequence, Hook, HookHost, HookFunction,
+    DeformationUnit, DiskElementUnit, ConstrictedUpsetBoxGroove, ConstrictedCircularOvalGroove, HexagonalGroove,
+    ThreeRollPass,
 )
 
 import pyroll.freiberg_flow_stress as freiberg_flow_stress

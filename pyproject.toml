@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyroll-basic"
-version = "2.0"
+version = "2.0.1"
 description = "A meta package for installing quickly the PyRolL core and a set of basic plugins and extensions."
 authors = ["Max Weiner <max.weiner@imf.tu-freiberg.de>"]
 license = "BSD-3-Clause"

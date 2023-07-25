@@ -5,13 +5,16 @@ the PyRolL core and a couple of basic plugins through its dependencies.
 
 The following packages are installed alongside their own dependencies:
 
-- `pyroll`
+- `pyroll-core`
+- `pyroll-cli`
+- `pyroll-report`
+- `pyroll-export`
 - `pyroll-integral-thermal`
 - `pyroll-hensel-power-and-labour`
 - `pyroll-wusatowski-spreading`
 - `pyroll-zouhar-contact`
 - `pyroll-freiberg-flow-stress`
-- `pyroll-hitchcock-roll-flattening`
+- `pyroll-lendl-equivalent-method`
 
 By importing this package with `import pyroll.basic`, all listed packages are imported and thus registered as active
 plugins.

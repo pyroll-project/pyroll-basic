@@ -4,9 +4,9 @@ version = "2.1"
 description = "A meta package for installing quickly the PyRolL core and a set of basic plugins and extensions."
 authors = ["Max Weiner <max.weiner@imf.tu-freiberg.de>"]
 license = "BSD-3-Clause"
-homepage = "https://pyroll-project.github.io"
-repository = "https://github.com/pyroll-project/pyroll-core"
-documentation = "https://pyroll.readthedocs.io/en/latest"
+homepage = "https://pyroll.readthedocs.io/en/latest"
+repository = "https://github.com/pyroll-project/pyroll-basic"
+documentation = "https://github.com/pyroll-project/pyroll-basic/blob/main/README.md"
 readme = "README.md"
 packages = [
     {include = "pyroll/basic.py" }
@@ -20,9 +20,9 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = ">=3.9"
-pyroll-core = "^2.0"
-pyroll-cli = "^2.0"
-pyroll-report = "^2.0"
+pyroll-core = "^2.1"
+pyroll-cli = "^2.1"
+pyroll-report = "^2.1"
 pyroll-export = "^2.0"
 pyroll-integral-thermal = "^2.0"
 pyroll-hensel-power-and-labour = "^2.0"

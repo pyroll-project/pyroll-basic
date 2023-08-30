@@ -10,7 +10,7 @@ The following packages are installed alongside their own dependencies:
 - `pyroll-report`
 - `pyroll-export`
 - `pyroll-integral-thermal`
-- `pyroll-hensel-power-and-labour`
+- `pyroll-lippmann-mahrenholz-force-torque`
 - `pyroll-wusatowski-spreading`
 - `pyroll-zouhar-contact`
 - `pyroll-freiberg-flow-stress`

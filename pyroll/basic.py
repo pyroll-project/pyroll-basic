@@ -13,7 +13,7 @@ import pyroll.freiberg_flow_stress as freiberg_flow_stress
 from pyroll.freiberg_flow_stress import FreibergFlowStressCoefficients
 
 import pyroll.integral_thermal as integral_thermal
-import pyroll.hensel_power_and_labour as hensel_power_and_labour
+import pyroll.lippmann_mahrenholz_force_torque as lippmann_mahrenholz_force_torque
 import pyroll.wusatowski_spreading as wusatowski_spreading
 import pyroll.lendl_equivalent_method as lendl_equivalent_method
 import pyroll.zouhar_contact as zouhar_contact

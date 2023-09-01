@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyroll-basic"
-version = "2.1"
+version = "2.1.0"
 description = "A meta package for installing quickly the PyRolL core and a set of basic plugins and extensions."
 authors = ["Max Weiner <max.weiner@imf.tu-freiberg.de>"]
 license = "BSD-3-Clause"
@@ -23,7 +23,7 @@ python = ">=3.9"
 pyroll-core = "^2.1"
 pyroll-cli = "^2.1"
 pyroll-report = "^2.1"
-pyroll-export = "^2.0"
+pyroll-export = "^2.1"
 pyroll-integral-thermal = "^2.0"
 pyroll-lippmann-mahrenholz-force-torque = "^2.0"
 pyroll-wusatowski-spreading = "^2.0"

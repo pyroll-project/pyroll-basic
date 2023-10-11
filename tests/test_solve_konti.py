@@ -15,7 +15,7 @@ def test_solve(tmp_path: Path, caplog):
         radius=24e-3,
         temperature=1200 + 273.15,
         strain=0,
-        material="BST 500",
+        material=["steel", "BST 500"],
         freiberg_flow_stress_coefficients=FreibergFlowStressCoefficients(
             a=4877.12 * 1e6,
             m1=-0.00273339,
@@ -31,7 +31,7 @@ def test_solve(tmp_path: Path, caplog):
             baseStrainRate=0.1
         ),
         density=7.5e3,
-        thermal_capacity=690,
+        specific_heat_capacity=690,
     )
 
     sequence = PassSequence([
@@ -45,9 +45,7 @@ def test_solve(tmp_path: Path, caplog):
                     usable_width=60e-3,
                     depth=7.25e-3
                 ),
-                nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
+                nominal_radius=321e-3 / 2
             ),
             velocity=1,
             gap=13.5e-3,
@@ -64,9 +62,7 @@ def test_solve(tmp_path: Path, caplog):
                     r2=18e-3,
                     depth=17.5e-3
                 ),
-                nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
+                nominal_radius=321e-3 / 2
             ),
             velocity=1,
             gap=1.5e-3,
@@ -85,9 +81,7 @@ def test_solve(tmp_path: Path, caplog):
                     usable_width=60e-3,
                     depth=7.25e-3
                 ),
-                nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
+                nominal_radius=321e-3 / 2
             ),
             velocity=2,
             gap=1.5e-3,
@@ -104,9 +98,7 @@ def test_solve(tmp_path: Path, caplog):
                     r2=13.5e-3,
                     depth=12.5e-3
                 ),
-                nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
+                nominal_radius=321e-3 / 2
             ),
             velocity=2,
             gap=1e-3,
@@ -123,9 +115,7 @@ def test_solve(tmp_path: Path, caplog):
                     r2=38e-3,
                     depth=4e-3
                 ),
-                nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
+                nominal_radius=321e-3 / 2
             ),
             velocity=2,
             gap=5.4e-3,
@@ -142,9 +132,7 @@ def test_solve(tmp_path: Path, caplog):
                     r2=10e-3,
                     depth=9e-3
                 ),
-                nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
+                nominal_radius=321e-3 / 2
             ),
             velocity=2,
             gap=1.8e-3,
@@ -161,9 +149,7 @@ def test_solve(tmp_path: Path, caplog):
                     r2=38e-3,
                     depth=4e-3
                 ),
-                nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
+                nominal_radius=321e-3 / 2
             ),
             velocity=2,
             gap=0.8e-3,
@@ -181,8 +167,6 @@ def test_solve(tmp_path: Path, caplog):
                     depth=5.5e-3
                 ),
                 nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
             ),
             velocity=2,
             gap=3.8e-3,
@@ -200,8 +184,6 @@ def test_solve(tmp_path: Path, caplog):
                     depth=2.5e-3
                 ),
                 nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
             ),
             velocity=2,
             gap=3.5e-3,
@@ -218,8 +200,6 @@ def test_solve(tmp_path: Path, caplog):
                     depth=4e-3
                 ),
                 nominal_radius=321e-3 / 2,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
             ),
             velocity=2,
             gap=4e-3,
@@ -230,6 +210,7 @@ def test_solve(tmp_path: Path, caplog):
         ),
         RollPass(
             label="F1 - K 3/50",
+            orientation=90,
             roll=Roll(
                 groove=CircularOvalGroove(
                     r1=2.5e-3,
@@ -237,8 +218,6 @@ def test_solve(tmp_path: Path, caplog):
                     depth=2.9e-3
                 ),
                 nominal_radius=107.5e-3,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
             ),
             velocity=4.89,
             gap=1.2e-3,
@@ -249,6 +228,7 @@ def test_solve(tmp_path: Path, caplog):
         ),
         RollPass(
             label="F2 - K 9/24",
+            orentation=0,
             roll=Roll(
                 groove=RoundGroove(
                     r1=0.5e-3,
@@ -256,8 +236,6 @@ def test_solve(tmp_path: Path, caplog):
                     depth=4.25e-3
                 ),
                 nominal_radius=107.5e-3,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
             ),
             velocity=6.1,
             gap=0.9e-3,
@@ -268,6 +246,7 @@ def test_solve(tmp_path: Path, caplog):
         ),
         RollPass(
             label="F3 - K3/51",
+            orientation=90,
             roll=Roll(
                 groove=CircularOvalGroove(
                     r1=2.5e-3,
@@ -275,18 +254,17 @@ def test_solve(tmp_path: Path, caplog):
                     depth=2.12e-3
                 ),
                 nominal_radius=107.5e-3,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
             ),
             velocity=7.91,
             gap=1.75e-3,
         ),
         Transport(
-            label="I -> II",
+            label="XIII -> XIV",
             duration=1.5 / 7.91
         ),
         RollPass(
             label="F4 - K 9/23",
+            orientation=0,
             roll=Roll(
                 groove=RoundGroove(
                     r1=0.5e-3,
@@ -294,14 +272,11 @@ def test_solve(tmp_path: Path, caplog):
                     depth=3.5e-3
                 ),
                 nominal_radius=85e-3,
-                elastic_modulus=210e9,
-                poissons_ratio=0.3
             ),
             velocity=10,
             gap=1.5e-3,
         ),
     ])
-
 
     try:
         sequence.solve(in_profile)

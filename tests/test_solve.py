@@ -16,7 +16,7 @@ def test_solve(tmp_path: Path, caplog):
         material=["C45", "steel"],
         flow_stress=100e6,
         density=7.5e3,
-        thermal_capacity=690,
+        specific_heat_capacity=690,
     )
 
     sequence = PassSequence([

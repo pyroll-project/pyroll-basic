@@ -1,3 +1,5 @@
+VERSION = "2.1.0"
+
 import pyroll.core as core
 from pyroll.core import (
     BoxGroove, ConstrictedBoxGroove, SquareGroove, DiamondGroove, RoundGroove, FalseRoundGroove, GothicGroove,

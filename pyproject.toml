@@ -1,39 +1,52 @@
-[tool.poetry]
+[project]
 name = "pyroll-basic"
-version = "2.1.0"
 description = "A meta package for installing quickly the PyRolL core and a set of basic plugins and extensions."
-authors = ["Max Weiner <max.weiner@imf.tu-freiberg.de>"]
-license = "BSD-3-Clause"
-homepage = "https://pyroll.readthedocs.io/en/latest"
-repository = "https://github.com/pyroll-project/pyroll-basic"
-documentation = "https://github.com/pyroll-project/pyroll-basic/blob/main/README.md"
-readme = "README.md"
-packages = [
-    {include = "pyroll/basic.py" }
+authors = [
+    { name = "Christoph Renzing", email = "christoph.renzing@imf.tu-freiberg.de" },
+    { name = "Max Weiner", email = "max.weiner@imf.tu-freiberg.de" }
 ]
+license = "BSD-3-Clause"
+requires-python = ">=3.9"
+dependencies = [
+    "pyroll-core ~= 2.1",
+    "pyroll-cli ~= 2.1",
+    "pyroll-report ~= 2.1",
+    "pyroll-export ~= 2.1",
+    "pyroll-integral-thermal ~= 2.1",
+    "pyroll-lippmann-mahrenholz-force-torque ~= 2.1",
+    "pyroll-wusatowski-spreading ~= 2.0",
+    "pyroll-zouhar-contact ~= 2.0",
+    "pyroll-freiberg-flow-stress ~= 2.0",
+    "pyroll-lendl-equivalent-method ~= 2.0",
+    "pyroll-linear-thermal-expansion~ = 2.1"
+]
+readme = "README.md"
+
 classifiers = [
     "Intended Audience :: Science/Research",
     "Intended Audience :: Manufacturing",
     "Operating System :: OS Independent",
-    "Topic :: Scientific/Engineering"
+    "Topic :: Scientific/Engineering",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Hatch",
+    "Framework :: IPython",
+    "Framework :: Jupyter",
+    "Framework :: Pytest",
+    "Framework :: Sphinx",
+    "Natural Language :: English",
 ]
 
-[tool.poetry.dependencies]
-python = ">=3.9"
-pyroll-core = "^2.1"
-pyroll-cli = "^2.1"
-pyroll-report = "^2.1"
-pyroll-export = "^2.1"
-pyroll-integral-thermal = "^2.0"
-pyroll-lippmann-mahrenholz-force-torque = "^2.0"
-pyroll-wusatowski-spreading = "^2.0"
-pyroll-zouhar-contact = "^2.0"
-pyroll-freiberg-flow-stress = "^2.0"
-pyroll-lendl-equivalent-method = "^2.0"
+dynamic = ["version"]
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.0"
+[project.urls]
+Homepage = "https://pyroll.readthedocs.io"
+Repository = "https://github.com/pyroll-project/pyroll-basic"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"

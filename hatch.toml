@@ -1,0 +1,23 @@
+[build]
+packages = [
+    "pyroll"
+]
+
+[version]
+path = "pyroll/basic.py"
+
+[envs.default]
+path = ".venv"
+dependencies = [
+    "pytest ~= 7.0",
+    "pyroll-report ~= 2.0"
+]
+
+[envs.test]
+path = ""
+
+[envs.test.scripts]
+all = "pytest"
+
+[[envs.test.matrix]]
+python = ["3.9", "3.10", "3.11"]

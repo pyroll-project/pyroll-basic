@@ -9,8 +9,7 @@ path = "pyroll/basic.py"
 [envs.default]
 path = ".venv"
 dependencies = [
-    "pytest ~= 7.0",
-    "pyroll-report ~= 2.0"
+    "pytest ~= 7.0"
 ]
 
 [envs.test]

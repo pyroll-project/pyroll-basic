@@ -13,12 +13,12 @@ dependencies = [
     "pyroll-report ~= 2.1",
     "pyroll-export ~= 2.1",
     "pyroll-integral-thermal ~= 2.1",
-    "pyroll-lippmann-mahrenholz-force-torque ~= 2.1",
+    "pyroll-lippmann-mahrenholz-force-torque ~= 2.0",
     "pyroll-wusatowski-spreading ~= 2.0",
-    "pyroll-zouhar-contact ~= 2.0",
+    "pyroll-zouhar-contact ~= 2.1",
     "pyroll-freiberg-flow-stress ~= 2.0",
     "pyroll-lendl-equivalent-method ~= 2.0",
-    "pyroll-linear-thermal-expansion~ = 2.1"
+    "pyroll-linear-thermal-expansion ~= 2.1"
 ]
 readme = "README.md"
 

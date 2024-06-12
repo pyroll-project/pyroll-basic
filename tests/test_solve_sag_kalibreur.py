@@ -8,7 +8,7 @@ from pyroll.freiberg_flow_stress import FreibergFlowStressCoefficients
 from pyroll.report import report
 
 
-def test_solve(tmp_path: Path, caplog):
+def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
     caplog.set_level(logging.INFO, logger="pyroll")
 
     in_profile = Profile.box(

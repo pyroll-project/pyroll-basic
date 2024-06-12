@@ -8,7 +8,7 @@ from pyroll.freiberg_flow_stress import FreibergFlowStressCoefficients
 from pyroll.report import report
 
 
-def test_solve(tmp_path: Path, caplog):
+def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
     caplog.set_level(logging.INFO, logger="pyroll")
 
     in_profile = Profile.round(

@@ -18,7 +18,8 @@ dependencies = [
     "pyroll-zouhar-contact ~= 2.1",
     "pyroll-freiberg-flow-stress ~= 2.0",
     "pyroll-lendl-equivalent-method ~= 2.0",
-    "pyroll-linear-thermal-expansion ~= 2.1"
+    "pyroll-linear-thermal-expansion ~= 2.1",
+    "pyroll-gripping-analysis ~= 2.0"
 ]
 readme = "README.md"
 

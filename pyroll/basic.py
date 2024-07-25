@@ -14,11 +14,11 @@ from pyroll.core import (
 import pyroll.freiberg_flow_stress as freiberg_flow_stress
 from pyroll.freiberg_flow_stress import FreibergFlowStressCoefficients
 
+import pyroll.gripping_analysis as gripping_analysis
 import pyroll.integral_thermal as integral_thermal
 import pyroll.lippmann_mahrenholz_force_torque as lippmann_mahrenholz_force_torque
 import pyroll.wusatowski_spreading as wusatowski_spreading
 import pyroll.lendl_equivalent_method as lendl_equivalent_method
 import pyroll.zouhar_contact as zouhar_contact
-
 import pyroll.report as report
 import pyroll.export as export

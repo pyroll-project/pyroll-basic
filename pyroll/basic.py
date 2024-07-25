@@ -1,4 +1,4 @@
-VERSION = "2.1.0"
+VERSION = "2.1.1"
 
 import pyroll.core as core
 from pyroll.core import (
@@ -13,8 +13,6 @@ from pyroll.core import (
 
 import pyroll.freiberg_flow_stress as freiberg_flow_stress
 from pyroll.freiberg_flow_stress import FreibergFlowStressCoefficients
-
-import pyroll.gripping_analysis as gripping_analysis
 import pyroll.integral_thermal as integral_thermal
 import pyroll.lippmann_mahrenholz_force_torque as lippmann_mahrenholz_force_torque
 import pyroll.wusatowski_spreading as wusatowski_spreading

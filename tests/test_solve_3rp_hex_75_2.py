@@ -34,6 +34,7 @@ def test_solve_3rp_hexagon_75_2(tmp_path: Path, caplog):
 
             ),
             inscribed_circle_diameter=84.43e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="I->II",
@@ -53,6 +54,7 @@ def test_solve_3rp_hexagon_75_2(tmp_path: Path, caplog):
 
             ),
             inscribed_circle_diameter=80.84e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="II->III",
@@ -72,6 +74,7 @@ def test_solve_3rp_hexagon_75_2(tmp_path: Path, caplog):
 
             ),
             inscribed_circle_diameter=77.51e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="III->IV",
@@ -92,6 +95,7 @@ def test_solve_3rp_hexagon_75_2(tmp_path: Path, caplog):
 
             ),
             inscribed_circle_diameter=75.8e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="IV->V",
@@ -111,6 +115,7 @@ def test_solve_3rp_hexagon_75_2(tmp_path: Path, caplog):
 
             ),
             inscribed_circle_diameter=75.96e-3,
+            coulomb_friction_coefficient=0.4,
         )
     ])
 

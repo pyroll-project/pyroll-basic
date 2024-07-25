@@ -49,6 +49,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=1,
             gap=13.5e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="I -> II",
@@ -66,6 +67,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=1,
             gap=1.5e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="II -> III",
@@ -85,6 +87,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=2,
             gap=1.5e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="III -> IV",
@@ -102,6 +105,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=2,
             gap=1e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="IV -> V",
@@ -119,6 +123,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=2,
             gap=5.4e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="V -> VI",
@@ -136,6 +141,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=2,
             gap=1.8e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="VI -> VII",
@@ -153,6 +159,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=2,
             gap=0.8e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="VII -> IIX",
@@ -170,6 +177,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=2,
             gap=3.8e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="IIX -> IX",
@@ -187,6 +195,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=2,
             gap=3.5e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="IX -> X",
@@ -203,6 +212,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=2,
             gap=4e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="X -> XI",
@@ -221,6 +231,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=4.89,
             gap=1.2e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="XI -> XII",
@@ -239,6 +250,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=6.1,
             gap=0.9e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="XII -> XIII",
@@ -257,6 +269,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=7.91,
             gap=1.75e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="XIII -> XIV",
@@ -275,6 +288,7 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=10,
             gap=1.5e-3,
+            coulomb_friction_coefficient=0.4,
         ),
     ])
 

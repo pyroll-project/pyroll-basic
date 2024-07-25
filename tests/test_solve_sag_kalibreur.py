@@ -52,6 +52,7 @@ def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=0.798,
             gap=53e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="I -> II",
@@ -71,6 +72,7 @@ def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=9.993,
             gap=53e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="II -> III",
@@ -91,6 +93,7 @@ def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=1.246,
             gap=43e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="III -> IV",
@@ -111,6 +114,7 @@ def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=1.453,
             gap=44e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="IV -> V",
@@ -130,6 +134,7 @@ def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=0.864,
             gap=39e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="V -> VI",
@@ -148,6 +153,7 @@ def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=1.057,
             gap=19e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="VI -> VII",
@@ -167,6 +173,7 @@ def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=1.186,
             gap=33.5e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="VII -> IIX",
@@ -186,6 +193,7 @@ def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=1.437,
             gap=10e-3,
+            coulomb_friction_coefficient=0.4,
         ),
         Transport(
             label="IIX -> IX",
@@ -205,6 +213,7 @@ def test_solve_sag_kalibreur_pass_sequence(tmp_path: Path, caplog):
             ),
             velocity=1.5,
             gap=10e-3,
+            coulomb_friction_coefficient=0.4,
         ),
     ])
 

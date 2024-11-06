@@ -303,6 +303,6 @@ def test_solve_imf_semi_continuous_8_mm_pass_sequence(tmp_path: Path, caplog):
     rendered = report(sequence)
     print()
 
-    report_file.write_text(rendered)
+    report_file.write_text(rendered, encoding="utf-8")
 
     webbrowser.open(report_file.as_uri())

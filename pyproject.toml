@@ -8,17 +8,17 @@ authors = [
 license = "BSD-3-Clause"
 requires-python = ">=3.9"
 dependencies = [
-    "pyroll-core ~= 2.1",
-    "pyroll-cli ~= 2.1",
-    "pyroll-report ~= 2.1",
-    "pyroll-export ~= 2.1",
-    "pyroll-integral-thermal ~= 2.1",
-    "pyroll-lippmann-mahrenholz-force-torque ~= 2.0",
-    "pyroll-wusatowski-spreading ~= 2.0",
-    "pyroll-zouhar-contact ~= 2.1",
-    "pyroll-freiberg-flow-stress ~= 2.0",
-    "pyroll-lendl-equivalent-method ~= 2.0",
-    "pyroll-linear-thermal-expansion ~= 2.1",
+    "pyroll-core ~= 3.0",
+    "pyroll-cli ~= 3.0",
+    "pyroll-report ~= 3.0",
+    "pyroll-export ~= 3.0",
+    "pyroll-integral-thermal ~= 3.0",
+    "pyroll-lippmann-mahrenholz-force-torque ~= 3.0",
+    "pyroll-wusatowski-spreading ~= 3.0",
+    "pyroll-zouhar-contact ~= 3.0",
+    "pyroll-freiberg-flow-stress ~= 3.0",
+    "pyroll-lendl-equivalent-method ~= 3.0",
+    "pyroll-linear-thermal-expansion ~= 3.0",
     "plotly"
 ]
 readme = "README.md"

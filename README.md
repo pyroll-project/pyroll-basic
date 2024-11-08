@@ -15,7 +15,10 @@ The following packages are installed alongside their own dependencies:
 - `pyroll-zouhar-contact`
 - `pyroll-freiberg-flow-stress`
 - `pyroll-lendl-equivalent-method`
-
+- `pyroll-linear-thermal-expansion`
+- `pyroll-elastic-mill-spring`
+- `pyroll-gripping-analysis`
+  
 By importing this package with `import pyroll.basic`, all listed packages are imported and thus registered as active
 plugins.
 The public API of this package is the union of all those packages.

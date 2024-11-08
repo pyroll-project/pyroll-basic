@@ -18,5 +18,8 @@ import pyroll.lippmann_mahrenholz_force_torque as lippmann_mahrenholz_force_torq
 import pyroll.wusatowski_spreading as wusatowski_spreading
 import pyroll.lendl_equivalent_method as lendl_equivalent_method
 import pyroll.zouhar_contact as zouhar_contact
+import pyroll.gripping_analysis as gripping_analysis
+import pyroll.interface_friction as interface_friction
+import pyroll.elastic_mill_spring as elastic_mill_spring
 import pyroll.report as report
 import pyroll.export as export

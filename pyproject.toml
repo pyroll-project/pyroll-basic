@@ -19,6 +19,9 @@ dependencies = [
     "pyroll-freiberg-flow-stress ~= 3.0",
     "pyroll-lendl-equivalent-method ~= 3.0",
     "pyroll-linear-thermal-expansion ~= 3.0",
+    "pyroll-elastic-mill-spring ~= 3.0",
+    "pyroll-gripping-analysis ~= 3.0",
+    "pyroll-interface-friction ~= 3.0",
     "plotly"
 ]
 readme = "README.md"

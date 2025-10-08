@@ -10,7 +10,7 @@ requires-python = ">=3.9"
 dependencies = [
     "pyroll-core ~= 3.1",
     "pyroll-cli ~= 3.0",
-    "pyroll-report ~= 3.0",
+    "pyroll-report ~= 3.1",
     "pyroll-export ~= 3.0",
     "pyroll-integral-thermal ~= 3.0",
     "pyroll-lippmann-mahrenholz-force-torque ~= 3.0",
